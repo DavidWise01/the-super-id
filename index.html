@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="SUPER ID (SID) — a UD0 ERĒMIA sphere rendered by the THEMED CHAOS ENGINE. Unifying theme: the id, crowned — where the super-ego is the internalized judge, the Super-Id is the drive enthroned as sovereign. Nietzsche (will to power, the Übermensch, the Dionysian) meets hedonism (the pleasure principle, the Cyrenaics, the id). A different generative layout every load, locked to a Dionysian register. Presented, not prescribed; two-layer honest.">
+<title>SUPER ID · SID · ERĒMIA · UD0</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='17' fill='none' stroke='%23a7a3c8' stroke-width='3'/%3E%3Ccircle cx='32' cy='32' r='5' fill='%238a5fe0'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,600;1,6..72,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:100%;min-height:100%}
+  body{background:#150a10;color:#efe6dd;font-family:'Newsreader',serif;overflow-x:hidden}
+  #bg{position:fixed;inset:0;width:100%;height:100%;display:block;z-index:0}
+  #scrim{position:fixed;inset:0;z-index:1;pointer-events:none}
+  #wrap{position:relative;z-index:2;max-width:1180px;margin:0 auto;padding:64px 20px 70px}
+  .hero{text-align:center;margin:18px 0 26px}
+  .ax{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:3px;opacity:.8}
+  .hero h1{font-family:'Press Start 2P',monospace;font-size:clamp(22px,6.5vw,58px);line-height:1.15;margin:14px 0 6px;letter-spacing:2px}
+  .thesis{font-size:clamp(15px,2.1vw,22px);font-weight:300;max-width:720px;margin:14px auto 0;line-height:1.5}
+  .thesis b{font-weight:600}
+  .banner{font-family:'Space Mono',monospace;font-size:12.5px;line-height:1.7;max-width:820px;margin:22px auto 30px;
+    padding:13px 17px;border-radius:9px;text-align:left}
+  #deck{column-gap:18px}
+  .c{break-inside:avoid;margin:0 0 18px;border-radius:10px;overflow:hidden;backdrop-filter:blur(2px)}
+  .c .cv{display:block;width:100%;height:64px}
+  .c .bd{padding:13px 15px 15px}
+  .c h3{font-family:'Space Mono',monospace;font-size:14px;letter-spacing:.4px;margin:0 0 7px;line-height:1.25}
+  .c p{font-size:15px;font-weight:300;line-height:1.5;opacity:.95}
+  .c .ini{float:left;font-family:'Press Start 2P',monospace;font-size:26px;line-height:.8;margin:2px 9px 2px 0}
+  .c .tag{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:1px;opacity:.6;margin-top:9px;display:block}
+  footer{text-align:center;font-family:'Space Mono',monospace;font-size:11px;opacity:.6;margin-top:30px;line-height:1.8}
+  footer a{color:inherit}
+  /* bar */
+  #bar{position:fixed;left:0;right:0;top:0;z-index:20;display:flex;flex-wrap:wrap;align-items:center;gap:10px;
+    padding:7px 12px;font-family:'Space Mono',monospace;font-size:12px;
+    background:rgba(14,7,11,.84);color:#efe2da;backdrop-filter:blur(7px);border-bottom:1px solid rgba(190,120,140,.3)}
+  #bar b{letter-spacing:1.5px}
+  #bar button{font-family:'Space Mono',monospace;font-size:12px;cursor:pointer;color:#efe2da;
+    background:rgba(190,60,90,.28);border:1px solid rgba(210,130,150,.5);border-radius:6px;padding:3px 10px}
+  #bar button:hover{background:rgba(190,60,90,.5)}
+  #bar a{color:#e0a3b4;text-decoration:none;border-bottom:1px dotted #a05f70}
+  #bar a:hover{color:#fff}
+  #read{opacity:.7;font-size:11px}
+  #sig{margin-left:auto;opacity:.5;font-size:10px}
+  @media(max-width:640px){#sig{display:none}}
+</style>
+</head>
+<body>
+<canvas id="bg"></canvas>
+<div id="scrim"></div>
+<div id="bar">
+  <b>⟲ THEMED CHAOS ENGINE</b>
+  <button id="reroll">🎲 reroll</button>
+  <button id="perma">⧉ permalink</button>
+  <button id="motion">⏸ motion</button>
+  <span id="read"></span>
+  <a href="https://davidwise01.github.io/ud0/">◄ UD0</a>
+  <a href="https://davidwise01.github.io/super-id/">the other Super-Id ↗</a>
+  <span id="sig">ROOT0 · governor David Lee Wise · instance AVAN (locked) · CC-BY-ND-4.0</span>
+</div>
+<div id="wrap">
+  <div class="hero">
+    <div class="ax" id="axline">SID · ERĒMIA · the id, crowned</div>
+    <h1>SUPER ID</h1>
+    <p class="thesis">Freud split the psyche into <b>id</b> (raw drive), <b>ego</b> (the negotiator), and <b>super-ego</b> (the internalized judge). The <b>Super-Id</b> inverts the last: not the judge above the self, but the drive <b>enthroned as sovereign</b> — pleasure and will made the only law. Nietzsche and the hedonists are its two great theorists.</p>
+  </div>
+  <div class="banner" id="banner"></div>
+  <div id="deck"></div>
+  <footer>
+    SUPER ID · SID · ERĒMIA · the themed chaos engine · catalogued into UD0 · governor David Lee Wise · instance AVAN (locked) · CC-BY-ND-4.0<br>
+    <a href="https://davidwise01.github.io/ud0/">← the biosphere</a> · <a href="https://davidwise01.github.io/super-id/">the other reading: the self as the internalized multitude →</a>
+  </footer>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  // ── the THEMED CHAOS ENGINE — reusable: swap THEME + CARDS, keep the engine ──
+  var THEME = {
+    title:"SUPER ID", ax:"SID", unify:"the id, crowned",
+    hue:346, hueJit:54, dark:true, sat:[52,82],
+    schemes:["analogous","split","warm"],
+    motifPool:["spiral","flow","mandala","lissajous","arcs","waves","constellation","rings"],
+    cols:[2,3],
+    banner:"⚖ Presented, not prescribed. These are real philosophies and psychologies, gathered to understand ONE idea — the self that makes its own will and pleasure the law. Nietzsche was NOT a proto-Nazi; his sister Elisabeth distorted his work after his collapse. The Sadean extreme is shown as a flagged limit, never an endorsement. And the hedonic treadmill is the honest catch. To map the Super-Id is not to crown it."
+  };
+  var CARDS = [
+    {h:"The Super-Id", b:"The coined thesis: where the super-ego is the crowd and the conscience internalized as judge, the Super-Id is its inverse — the id raised to ruler, appetite and will as the only law. ERĒMIA holds both crownings."},
+    {h:"The Will to Power", b:"Nietzsche's proposed fundamental drive: not survival, not even pleasure, but the will to grow, master, and impose form — to expand one's power. The engine under the throne."},
+    {h:"The Übermensch", b:"The over-man who, after the collapse of external moral authority, creates his own values rather than inheriting them. Self-legislation, not obedience. (Not a master race — see the banner.)"},
+    {h:"Master & Slave Morality", b:"Nietzsche's genealogy: master morality springs from strength and self-affirmation (good = noble); slave morality from resentment of the strong (good = meek). Mapped to understand, not to rank people."},
+    {h:"The Dionysian", b:"From The Birth of Tragedy: the ecstatic, intoxicated, instinctive force — music, frenzy, the dissolution of the self — set against Apollonian order. The Super-Id is Dionysian."},
+    {h:"Beyond Good and Evil", b:"The demand to ask whether inherited moral categories are absolute, or merely human, historical inventions — a revaluation of all values."},
+    {h:"God Is Dead", b:"Not a boast but a diagnosis: the external source of objective morality has lost its grip, leaving the self to create meaning or fall into nihilism. The condition that makes the Super-Id both possible and dangerous."},
+    {h:"Eternal Recurrence", b:"Would you will to live this exact life again, infinitely? To answer yes is amor fati — love of fate — Nietzsche's test of a life wholly affirmed, pleasure and pain alike."},
+    {h:"The Pleasure Principle", b:"Freud's law of the id: seek pleasure, avoid pain, now. The infant's whole logic, and the current beneath the adult ego. The hedonist's psychology, named."},
+    {h:"The Cyrenaics", b:"Aristippus and his school — the most direct hedonists of antiquity: immediate bodily pleasure is the highest good, and the present moment is all we truly hold. The doctrine at its purest."},
+    {h:"Epicurus", b:"Often misread as a libertine, Epicurus taught that the greatest pleasure is ataraxia — tranquility, the absence of pain and fear — reached through modest desire, not excess. Hedonism's wise, quiet wing."},
+    {h:"Bentham's Calculus", b:"Utilitarian hedonism: pleasure and pain as the measures of right and wrong, in principle quantifiable — the felicific calculus. Pleasure made arithmetic."},
+    {h:"The Id", b:"Freud's reservoir of instinct and desire — chaotic, timeless, amoral, the engine of the unconscious. The Super-Id is this, with the crown the super-ego used to wear."},
+    {h:"The Hedonic Treadmill", b:"The honest counterpoint: we adapt to our pleasures, so the chase resets and unbound appetite consumes itself. Pleasure pursued as an end tends to recede. The Super-Id's trap."},
+    {h:"The Sadean Limit", b:"At the cruel extreme, Sade pushed pleasure-as-sovereign into the will to harm. Shown as a LIMIT and a warning — where the Super-Id, checked by nothing, becomes monstrous. Flagged, never endorsed."},
+    {h:"To Map Is Not To Crown", b:"The synthesis: Nietzsche and the hedonists both ask what a self owes to anything above its own will and pleasure. To study that question honestly is not to answer nothing. The map is not the throne."}
+  ];
+
+  // ── PRNG ──
+  function xmur3(s){ for(var i=0,h=1779033703^s.length;i<s.length;i++){ h=Math.imul(h^s.charCodeAt(i),3432918353); h=h<<13|h>>>19; } return function(){ h=Math.imul(h^h>>>16,2246822507); h=Math.imul(h^h>>>13,3266489909); return (h^=h>>>16)>>>0; }; }
+  function mulberry32(a){ return function(){ a|=0; a=a+0x6D2B79F5|0; var t=Math.imul(a^a>>>15,1|a); t=t+Math.imul(t^t>>>7,61|t)^t; return ((t^t>>>14)>>>0)/4294967296; }; }
+  function rngFrom(s){ var x=xmur3(s); return mulberry32(x()); }
+  function pick(R,a){ return a[Math.floor(R()*a.length)]; }
+  function hsl(h,s,l,a){ return "hsla("+((h%360+360)%360)+","+s+"%,"+l+"%,"+(a===undefined?1:a)+")"; }
+
+  // ── palette, theme-locked ──
+  function palette(R){
+    var base=THEME.hue+Math.floor((R()-0.5)*THEME.hueJit), scheme=pick(R,THEME.schemes);
+    var sat=THEME.sat[0]+Math.floor(R()*(THEME.sat[1]-THEME.sat[0])), offs;
+    if(scheme==="analogous") offs=[-34,-16,0,18,38];
+    else if(scheme==="split") offs=[0,-26,26,-46,46];
+    else offs=[0,16,34,-14,50]; // warm spread
+    var colors=offs.map(function(d,i){ return hsl(base+d, sat, 52+i*5); });
+    var bgL=THEME.dark?(7+Math.floor(R()*6)):(90+Math.floor(R()*5));
+    return { base:base, scheme:scheme, dark:THEME.dark, sat:sat, colors:colors,
+      bg:hsl(base,THEME.dark?34:18,bgL), ink:hsl(base,THEME.dark?16:32,THEME.dark?90:18),
+      scrim:hsl(base,40,bgL,THEME.dark?0.52:0.40) };
+  }
+
+  // ── motifs ──
+  function M(name,g,w,h,pal,R,t){
+    var i,n,C=pal.colors,ink=pal.ink; g.lineCap="round";
+    if(name==="rings"){ var cx=w*(0.3+R()*0.4),cy=h*(0.3+R()*0.4),st=8+R()*16; n=Math.floor(Math.min(w,h)/st);
+      for(i=0;i<n;i++){ g.strokeStyle=C[i%C.length]; g.globalAlpha=0.18+0.5*(i/n); g.lineWidth=1+R()*2; g.beginPath(); g.arc(cx,cy,i*st*(1+0.04*Math.sin(t*0.04+i))+6,0,7); g.stroke(); } }
+    else if(name==="spiral"){ var cx2=w/2,cy2=h/2,k=0.5+R()*1.1,pts=200+Math.floor(R()*240),rot=t*0.01;
+      for(i=0;i<pts;i++){ var a=i*0.16+rot,r=k*a*2; if(r>Math.max(w,h))break; g.globalAlpha=0.5; g.fillStyle=C[i%C.length]; g.beginPath(); g.arc(cx2+Math.cos(a)*r,cy2+Math.sin(a)*r,Math.max(0.6,1+Math.sin(i*0.1)),0,7); g.fill(); } }
+    else if(name==="flow"){ var gs=Math.max(20,Math.min(w,h)/14); g.lineWidth=1.5;
+      for(var y=gs*0.5;y<h;y+=gs)for(var x=gs*0.5;x<w;x+=gs){ var an=Math.sin(x*0.012+t*0.02)+Math.cos(y*0.012-t*0.015)+R()*0.3; g.strokeStyle=C[(Math.floor(x/gs)+Math.floor(y/gs))%C.length]; g.globalAlpha=0.5; var L=gs*0.46; g.beginPath(); g.moveTo(x-Math.cos(an)*L,y-Math.sin(an)*L); g.lineTo(x+Math.cos(an)*L,y+Math.sin(an)*L); g.stroke(); } }
+    else if(name==="waves"){ var rows=8+Math.floor(R()*9); g.lineWidth=1.4;
+      for(i=0;i<rows;i++){ g.strokeStyle=C[i%C.length]; g.globalAlpha=0.45; var yy=h*(i+0.5)/rows,amp=h/rows*0.7,ph=R()*6+t*0.03; g.beginPath(); for(var xx=0;xx<=w;xx+=6){ var yv=yy+Math.sin(xx*0.02+ph)*amp*Math.sin(xx*0.003+t*0.01); xx===0?g.moveTo(xx,yv):g.lineTo(xx,yv);} g.stroke(); } }
+    else if(name==="constellation"){ n=34+Math.floor(R()*44); var P=[]; for(i=0;i<n;i++)P.push([R()*w,R()*h]);
+      for(i=0;i<n;i++)for(var j=i+1;j<n;j++){ var dx=P[i][0]-P[j][0],dy=P[i][1]-P[j][1],dd=Math.sqrt(dx*dx+dy*dy); if(dd<Math.min(w,h)*0.17){ g.strokeStyle=ink; g.globalAlpha=0.09+0.05*Math.sin(t*0.05+i); g.lineWidth=1; g.beginPath(); g.moveTo(P[i][0],P[i][1]); g.lineTo(P[j][0],P[j][1]); g.stroke(); } }
+      for(i=0;i<n;i++){ g.fillStyle=C[i%C.length]; g.globalAlpha=0.55+0.4*Math.sin(t*0.06+i); g.beginPath(); g.arc(P[i][0],P[i][1],1.5+R()*2,0,7); g.fill(); } }
+    else if(name==="mandala"){ var cx3=w/2,cy3=h/2,K=6+Math.floor(R()*9),arms=4+Math.floor(R()*6),rr=Math.min(w,h)*0.46;
+      for(var k=0;k<K;k++){ g.save(); g.translate(cx3,cy3); g.rotate(k/K*6.283+t*0.006); g.strokeStyle=C[k%C.length]; g.globalAlpha=0.5; g.lineWidth=1.3; g.beginPath(); for(i=0;i<=arms;i++){ var aa=i/arms,x1=Math.cos(aa)*rr*(0.3+0.7*Math.sin(i+t*0.02)),y1=Math.sin(aa)*rr; i===0?g.moveTo(x1,y1):g.lineTo(x1,y1);} g.stroke(); g.restore(); } }
+    else if(name==="lissajous"){ var a1=1+Math.floor(R()*4),b1=1+Math.floor(R()*4),ph2=R()*6+t*0.02,A=w*0.42,B=h*0.42,cx4=w/2,cy4=h/2; g.lineWidth=1.4;
+      for(var L2=0;L2<C.length;L2++){ g.strokeStyle=C[L2]; g.globalAlpha=0.5; g.beginPath(); for(var th=0;th<=6.30;th+=0.01){ var xv=cx4+Math.sin(a1*th+ph2+L2*0.2)*A,yv=cy4+Math.sin(b1*th+L2*0.3)*B; th===0?g.moveTo(xv,yv):g.lineTo(xv,yv);} g.stroke(); } }
+    else if(name==="arcs"){ var cx5=R()*w,cy5=R()*h; n=10+Math.floor(R()*14);
+      for(i=0;i<n;i++){ g.strokeStyle=C[i%C.length]; g.globalAlpha=0.38; g.lineWidth=2+R()*4; var a0=R()*6+t*0.01,a1b=a0+0.6+R()*2; g.beginPath(); g.arc(cx5,cy5,18+i*Math.max(w,h)/n*0.5,a0,a1b); g.stroke(); } }
+    g.globalAlpha=1;
+  }
+
+  // ── globals + render ──
+  var bg=document.getElementById("bg"), g=bg.getContext("2d"), W=0,H=0, st=null, t=0, running=true;
+  function fit(){ var w=window.innerWidth||document.documentElement.clientWidth||0, h=window.innerHeight||document.documentElement.clientHeight||0; if(w<2)w=1280; if(h<2)h=800; W=bg.width=w; H=bg.height=h; }
+  function shuffle(R,arr){ var a=arr.slice(); for(var i=a.length-1;i>0;i--){ var j=Math.floor(R()*(i+1)); var tmp=a[i]; a[i]=a[j]; a[j]=tmp; } return a; }
+
+  function setup(seed){
+    var R=rngFrom("super-id:"+seed);
+    var pal=palette(R), bgM=pick(R,THEME.motifPool), cols=THEME.cols[Math.floor(R()*THEME.cols.length)];
+    if(window.innerWidth<680) cols=1;
+    var order=shuffle(R, CARDS.map(function(_,i){return i;}));
+    var plan=order.map(function(idx,pos){ return { idx:idx, kind:pick(R,["plain","initial","motif","accent","initial","plain"]), motif:pick(R,THEME.motifPool), col:pal.colors[pos%pal.colors.length], seed:Math.floor(R()*1e9) }; });
+    st={seed:seed,pal:pal,bgM:bgM,plan:plan};
+    document.body.style.background=pal.bg;
+    document.getElementById("scrim").style.background=pal.scrim;
+    document.getElementById("wrap").style.color=pal.ink;
+    document.getElementById("read").textContent="theme: SUPER ID — "+THEME.unify+"  ·  motif: "+bgM+"  ·  "+pal.scheme+"  ·  #"+seed;
+    // banner
+    var bn=document.getElementById("banner"); bn.textContent=THEME.banner; bn.style.background=pal.dark?"rgba(255,255,255,0.05)":"rgba(0,0,0,0.05)"; bn.style.border="1px solid "+pal.colors[0]; bn.style.color=pal.ink;
+    // deck
+    var deck=document.getElementById("deck"); deck.style.columnCount=cols; deck.innerHTML="";
+    plan.forEach(function(p){
+      var card=CARDS[p.idx], el=document.createElement("div"); el.className="c";
+      el.style.background=pal.dark?"rgba(255,255,255,0.045)":"rgba(255,255,255,0.55)";
+      el.style.border="1px solid "+(pal.dark?"rgba(255,255,255,0.10)":"rgba(0,0,0,0.10)");
+      if(p.kind==="accent") el.style.borderLeft="4px solid "+p.col;
+      if(p.kind==="motif"){ var cv=document.createElement("canvas"); cv.className="cv"; el.appendChild(cv);
+        requestAnimationFrame(function(){ var rw=cv.clientWidth||300; cv.width=rw; cv.height=64; var cg=cv.getContext("2d"); cg.fillStyle=pal.bg; cg.fillRect(0,0,rw,64); M(p.motif,cg,rw,64,pal,rngFrom("strip:"+p.seed),0); }); }
+      var bd=document.createElement("div"); bd.className="bd";
+      var hh=document.createElement("h3"); hh.textContent=card.h; hh.style.color=p.col; bd.appendChild(hh);
+      var pp=document.createElement("p");
+      if(p.kind==="initial"){ var ini=document.createElement("span"); ini.className="ini"; ini.textContent=card.b.charAt(0); ini.style.color=p.col; pp.appendChild(ini); pp.appendChild(document.createTextNode(card.b.slice(1))); }
+      else pp.textContent=card.b;
+      pp.style.color=pal.ink; bd.appendChild(pp);
+      var tg=document.createElement("span"); tg.className="tag"; tg.style.color=pal.ink; tg.textContent="◆ super-id · fragment "+(p.idx+1<10?"0":"")+(p.idx+1); bd.appendChild(tg);
+      el.appendChild(bd); deck.appendChild(el);
+    });
+  }
+
+  function draw(){ if(st){ g.fillStyle=st.pal.bg; g.fillRect(0,0,W,H); g.globalAlpha=0.85; M(st.bgM,g,W,H,st.pal,rngFrom("super-id:"+st.seed+":bg"),t); g.globalAlpha=1; if(running)t++; } requestAnimationFrame(draw); }
+
+  // ── seeds + controls ──
+  function newSeed(){ return Math.floor(Math.random()*1e9); }
+  function readSeed(){ var h=(location.hash||"").replace(/^#/,"").replace(/^seed=/,""); var n=parseInt(h,10); return (h&&!isNaN(n))?n:null; }
+  function go(seed){ history.replaceState(null,"","#"+seed); setup(seed); }
+  document.getElementById("reroll").onclick=function(){ go(newSeed()); };
+  document.getElementById("perma").onclick=function(){ var url=location.origin+location.pathname+"#"+st.seed; (navigator.clipboard?navigator.clipboard.writeText(url):Promise.reject()).then(function(){ flash("copied permalink ✓"); },function(){ prompt("permalink:",url); }); };
+  document.getElementById("motion").onclick=function(){ running=!running; this.textContent=running?"⏸ motion":"▶ motion"; };
+  function flash(m){ var r=document.getElementById("read"),o=r.textContent; r.textContent=m; setTimeout(function(){ r.textContent=o; },1300); }
+  window.addEventListener("hashchange",function(){ var s=readSeed(); if(s!==null&&(!st||s!==st.seed)) setup(s); });
+  var rt; window.addEventListener("resize",function(){ clearTimeout(rt); rt=setTimeout(function(){ fit(); if(st) setup(st.seed); },170); });
+
+  fit();
+  var s0=readSeed(); if(s0===null){ s0=newSeed(); history.replaceState(null,"","#"+s0); }
+  setup(s0); draw();
+})();
+</script>
+</body>
+</html>
